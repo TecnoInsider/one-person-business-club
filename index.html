@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=block7-4" />
   </head>
   <body>
     <section class="hero" aria-labelledby="hero-title">
@@ -267,5 +267,230 @@
         </div>
       </div>
     </section>
+
+    <section class="pricing-section" id="pricing" aria-labelledby="pricing-title">
+      <div class="pricing-inner">
+        <div class="pricing-heading">
+          <p class="section-label pricing-label">УЧАСТИЕ</p>
+          <h2 id="pricing-title">Условия участия</h2>
+          <p>
+            Выберите удобный тариф и присоединяйтесь к сообществу единомышленников.<br />
+            Инвестируйте в себя и свой проект уже сегодня.
+          </p>
+        </div>
+
+        <img src="./block6/6 icon 1.png" alt="" class="pricing-decor pricing-decor--left" aria-hidden="true" />
+        <img src="./block6/6 icon 2.png" alt="" class="pricing-decor pricing-decor--right" aria-hidden="true" />
+
+        <!-- Pricing cards are independent: remove/add an article to change available packages. -->
+        <div class="pricing-cards" aria-label="Тарифы клуба">
+          <article class="pricing-card">
+            <div class="pricing-card-badge">Первые 100 участников</div>
+            <h3>Старт</h3>
+            <div class="pricing-price">
+              <strong>25$</strong>
+              <span>/месяц</span>
+            </div>
+            <p class="pricing-subnote">Цена закреплена при активной подписке.</p>
+            <ul>
+              <li>Материалы клуба и еженедельные обновления</li>
+              <li>Сообщество, чат, поддержка и разборы</li>
+              <li>AI-сервисы и инструменты для развития проекта</li>
+            </ul>
+            <a class="pricing-button pricing-button--outline" href="#pricing">Вступить в клуб</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured">
+            <div class="pricing-card-badge">Самый выгодный</div>
+            <h3>3 Месяца</h3>
+            <div class="pricing-price">
+              <strong>60$</strong>
+              <span>/3 месяца</span>
+            </div>
+            <p class="pricing-saving">экономия 30$</p>
+            <ul>
+              <li>Материалы клуба и еженедельные обновления</li>
+              <li>Сообщество, чат, поддержка и разборы</li>
+              <li>AI-сервисы и инструменты для развития проекта</li>
+            </ul>
+            <a class="pricing-button" href="#pricing">Вступить в клуб</a>
+          </article>
+
+          <article class="pricing-card">
+            <h3>Стандарт</h3>
+            <div class="pricing-price">
+              <strong>30$</strong>
+              <span>/месяц</span>
+            </div>
+            <p class="pricing-subnote">После первых 100 участников</p>
+            <ul>
+              <li>Материалы клуба и еженедельные обновления</li>
+              <li>Сообщество, чат, поддержка и разборы</li>
+              <li>AI-сервисы и инструменты для развития проекта</li>
+            </ul>
+            <a class="pricing-button pricing-button--outline" href="#pricing">Вступить в клуб</a>
+          </article>
+        </div>
+
+        <div class="pricing-guarantee">
+          <img src="./block6/6 image 1.png" alt="" class="pricing-guarantee-bg" aria-hidden="true" />
+          <p>
+            14 дней гарантии возврата денег. Если доступ в закрытое пространство вам не подойдёт — вернём средства без вопросов.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="faq-inner">
+        <div class="faq-heading">
+          <p class="section-label faq-label">ВОПРОСЫ</p>
+          <h2 id="faq-title">Часто задаваемые вопросы</h2>
+          <p>
+            Мы собрали ответы на самые популярные вопросы.<br />
+            Нажмите на любой, чтобы раскрыть детали.
+          </p>
+        </div>
+
+        <div class="faq-list" data-accordion>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1">
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z" />
+                  <path d="M12 3.2v2.1M12 18.7v2.1M4.2 12h2.1M17.7 12h2.1M6.5 6.5 8 8M16 16l1.5 1.5M17.5 6.5 16 8M8 16l-1.5 1.5" />
+                </svg>
+              </span>
+              <span>Нужны ли технические знания для участия?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="m7 9 5 5 5-5" /></svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1">
+              <p>Нет. Мы разбираем всё с нуля — от смыслов до инструментов. Технический порог входа — ноль.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M4.5 11.2 12 4.8l7.5 6.4" />
+                  <path d="M6.7 10.4v8.1h10.6v-8.1" />
+                  <path d="M10 18.5v-5h4v5" />
+                </svg>
+              </span>
+              <span>Это курс с домашними заданиями и дедлайнами?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="m7 9 5 5 5-5" /></svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2">
+              <p>Нет. Это живое пространство. Вы включаетесь в своём темпе, без жёстких обязательств и расписания.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M8 5.5v13l10.5-6.5L8 5.5Z" />
+                </svg>
+              </span>
+              <span>Я только начинаю. Подойдёт ли мне клуб?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="m7 9 5 5 5-5" /></svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3">
+              <p>Да. Клуб создан именно для тех, кто хочет начать с правильной точки — с личности и смыслов, а не с инструментов наугад.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M4 7.5h6l1.7 2h8.3v8.8H4V7.5Z" />
+                </svg>
+              </span>
+              <span>Что если я уже веду свой проект?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="m7 9 5 5 5-5" /></svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4">
+              <p>Помогаем структурировать и усилить то, что уже есть.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5">
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 3.8 18.2 6v5.3c0 4-2.5 7.3-6.2 8.9-3.7-1.6-6.2-4.9-6.2-8.9V6L12 3.8Z" />
+                  <path d="m8.8 12 2.1 2.1 4.6-4.8" />
+                </svg>
+              </span>
+              <span>Вы гарантируете, что я начну зарабатывать?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="m7 9 5 5 5-5" /></svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5">
+              <p>Нет, и мы честны в этом. Мы создаём среду, делимся инструментами и знаниями о том, как выстраивать проекты и монетизацию. Всё остальное — ваши решения и действия.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6">
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M18.5 9.5A6.5 6.5 0 0 0 7.8 6.9L6 8.7" />
+                  <path d="M6 4.4v4.3h4.3" />
+                  <path d="M5.5 14.5a6.5 6.5 0 0 0 10.7 2.6l1.8-1.8" />
+                  <path d="M18 19.6v-4.3h-4.3" />
+                </svg>
+              </span>
+              <span>Можно ли отменить подписку в любой момент?</span>
+              <span class="faq-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="m7 9 5 5 5-5" /></svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-6">
+              <p>Да, в любой момент. Без штрафов и объяснений.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-support">
+          <div class="faq-support-icon" aria-hidden="true"></div>
+          <div>
+            <h3>Не нашли ответ на свой вопрос?</h3>
+            <p>Напишите нам — мы на связи и поможем разобраться.</p>
+          </div>
+          <a class="faq-support-button" href="#contacts">Задать вопрос</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.querySelectorAll("[data-accordion]").forEach((accordion) => {
+        accordion.addEventListener("click", (event) => {
+          const button = event.target.closest(".faq-question");
+          if (!button || !accordion.contains(button)) return;
+
+          const isOpen = button.getAttribute("aria-expanded") === "true";
+
+          accordion.querySelectorAll(".faq-question").forEach((item) => {
+            item.setAttribute("aria-expanded", "false");
+          });
+
+          if (!isOpen) {
+            button.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
