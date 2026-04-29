@@ -65,7 +65,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=prod-4" />
+    <link rel="stylesheet" href="./styles.css?v=prod-5" />
   </head>
   <body>
     <section class="hero" aria-labelledby="hero-title">
@@ -732,6 +732,57 @@
       document.querySelectorAll("[data-current-year]").forEach((item) => {
         item.textContent = new Date().getFullYear();
       });
+
+      const revealItems = document.querySelectorAll(
+        [
+          ".audience-inner",
+          ".system-copy",
+          ".system-map",
+          ".system-note",
+          ".work-heading",
+          ".work-card",
+          ".work-note",
+          ".reviews-heading",
+          ".review-card",
+          ".inside-heading",
+          ".inside-panel",
+          ".inside-note",
+          ".pricing-heading",
+          ".pricing-card",
+          ".pricing-guarantee",
+          ".faq-heading",
+          ".faq-item",
+          ".faq-support",
+          ".final-card",
+        ].join(", ")
+      );
+
+      if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            });
+          },
+          {
+            rootMargin: "0px 0px -12% 0px",
+            threshold: 0.12,
+          }
+        );
+
+        revealItems.forEach((item, index) => {
+          item.dataset.reveal = "";
+          item.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 80}ms`);
+          revealObserver.observe(item);
+        });
+      } else {
+        revealItems.forEach((item) => {
+          item.dataset.reveal = "";
+          item.classList.add("is-visible");
+        });
+      }
     </script>
   </body>
 </html>
