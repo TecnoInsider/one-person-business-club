@@ -3,24 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One Person Business - клуб для личного проекта</title>
+    <title>One Person Business — клуб для личного проекта и AI-инструментов</title>
     <meta
       name="description"
-      content="Живое пространство, где вы изучаете, как выстраивать проект вокруг своей личности, осваиваете AI-инструменты и двигаетесь к своему делу."
+      content="One Person Business — живое пространство для тех, кто хочет выстраивать проект вокруг своей личности, осваивать AI-инструменты и развивать своё дело в поддерживающем окружении."
     />
-    <meta property="og:title" content="One Person Business - живое пространство для личного проекта" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#FFF8EE" />
+    <meta name="application-name" content="One Person Business" />
+    <meta name="apple-mobile-web-app-title" content="One Person Business" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="canonical" href="https://one-person-business.club/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="One Person Business" />
+    <meta property="og:url" content="https://one-person-business.club/" />
+    <meta property="og:title" content="One Person Business — клуб для личного проекта и AI-инструментов" />
     <meta
       property="og:description"
-      content="Собери проект вокруг себя - и начни на этом зарабатывать."
+      content="Соберите проект вокруг себя, осваивайте AI-инструменты и двигайтесь к своему делу в окружении людей, которые идут туда же."
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://one-person-business.club/assets/og-image.png" />
+    <meta property="og:image:secure_url" content="https://one-person-business.club/assets/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="One Person Business — клуб для личного проекта" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="One Person Business — клуб для личного проекта и AI-инструментов" />
+    <meta
+      name="twitter:description"
+      content="Живое пространство, где вы строите проект вокруг своей личности, осваиваете AI-инструменты и двигаетесь в окружении единомышленников."
+    />
+    <meta name="twitter:image" content="https://one-person-business.club/assets/og-image.png" />
+    <meta name="twitter:image:alt" content="One Person Business — клуб для личного проекта" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "One Person Business",
+        "description": "Клуб для личного проекта, AI-инструментов и развития своего дела в поддерживающем окружении.",
+        "inLanguage": "ru",
+        "url": "https://one-person-business.club/",
+        "image": "https://one-person-business.club/assets/og-image.png",
+        "potentialAction": {
+          "@type": "JoinAction",
+          "name": "Вступить в клуб",
+          "target": "/#pricing"
+        }
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=block7-4" />
+    <link rel="stylesheet" href="./styles.css?v=prod-4" />
   </head>
   <body>
     <section class="hero" aria-labelledby="hero-title">
@@ -37,7 +82,7 @@
           <a href="#contacts">Контакты</a>
         </nav>
 
-        <a class="header-cta" href="#join">Вступить <span aria-hidden="true">→</span></a>
+        <a class="header-cta" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить <span aria-hidden="true">→</span></a>
       </header>
 
       <div class="hero-inner">
@@ -55,14 +100,16 @@
             осваиваете современные AI-инструменты и двигаетесь в сторону своего дела в окружении
             людей, которые идут туда же.
           </p>
-          <a class="primary-cta" href="#join">Вступить в клуб <span aria-hidden="true">→</span></a>
+          <a class="primary-cta" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить в клуб <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="hero-visual">
           <img
-            src="./block1/1 block hero.png"
+            src="./block1/1 block hero.webp"
             alt="Иллюстрация клуба One Person Business"
             class="hero-image"
+            fetchpriority="high"
+            decoding="async"
           />
         </div>
       </div>
@@ -75,19 +122,25 @@
 
         <div class="audience-cards" aria-label="Для кого подходит клуб">
           <img
-            src="./block2/2 block left img.png"
+            src="./block2/2 block left img.webp"
             alt="Помогающие специалисты"
             class="audience-card audience-card-left"
+            loading="lazy"
+            decoding="async"
           />
           <img
-            src="./block2/2 block center img.png"
+            src="./block2/2 block center img.webp"
             alt="Эксперты и специалисты"
             class="audience-card audience-card-center"
+            loading="lazy"
+            decoding="async"
           />
           <img
-            src="./block2/2 block right img.png"
+            src="./block2/2 block right img.webp"
             alt="Творческие личности"
             class="audience-card audience-card-right"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
@@ -113,13 +166,15 @@
             Мы объединили ключевые элементы, которые помогают участникам строить устойчивый и
             масштабируемый проект вокруг себя.
           </p>
-          <a class="primary-cta system-cta" href="#join">Вступить сейчас <span aria-hidden="true">→</span></a>
+          <a class="primary-cta system-cta" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить сейчас <span aria-hidden="true">→</span></a>
         </div>
 
         <img
-          src="./block3/image-01.png"
+          src="./block3/image-01.webp"
           alt="Четыре опоры проекта: личность и мышление, AI-инструменты, продукт и упаковка, аудитория и продажи"
           class="system-map"
+          loading="lazy"
+          decoding="async"
         />
 
         <div class="system-note">
@@ -142,9 +197,11 @@
         <div class="work-grid" aria-label="Форматы работы клуба">
           <article class="work-card">
             <img
-              src="./block4/4 image 1.png"
+              src="./block4/4 image 1.webp"
               alt="Участницы обсуждают проект за столом"
               class="work-image"
+              loading="lazy"
+              decoding="async"
             />
             <div class="work-card-copy">
               <img src="./block4/4 icon 1.png" alt="" class="work-icon" aria-hidden="true" />
@@ -157,9 +214,11 @@
 
           <article class="work-card">
             <img
-              src="./block4/4 image 2.png"
+              src="./block4/4 image 2.webp"
               alt="Онлайн-встреча участников на ноутбуке"
               class="work-image"
+              loading="lazy"
+              decoding="async"
             />
             <div class="work-card-copy">
               <img src="./block4/4 icon 2.png" alt="" class="work-icon" aria-hidden="true" />
@@ -172,9 +231,11 @@
 
           <article class="work-card">
             <img
-              src="./block4/4 image 3.png"
+              src="./block4/4 image 3.webp"
               alt="AI-ассистент помогает с инструментами проекта"
               class="work-image"
+              loading="lazy"
+              decoding="async"
             />
             <div class="work-card-copy">
               <img src="./block4/4 icon 3.png" alt="" class="work-icon" aria-hidden="true" />
@@ -187,9 +248,11 @@
 
           <article class="work-card">
             <img
-              src="./block4/4 image 4.png"
+              src="./block4/4 image 4.webp"
               alt="Участники клуба поддерживают друг друга"
               class="work-image"
+              loading="lazy"
+              decoding="async"
             />
             <div class="work-card-copy">
               <img src="./block4/4 icon 4.png" alt="" class="work-icon" aria-hidden="true" />
@@ -207,6 +270,57 @@
             Вы не одни — рядом команда, эксперты и люди, которые идут тем же путём.<br />
             Мы <span>учимся, создаём и растём</span> вместе.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="reviews-inner">
+        <div class="reviews-heading">
+          <p class="section-label reviews-label">ОТЗЫВЫ</p>
+          <h2 id="reviews-title">Что говорят участники</h2>
+          <p>Клуб помогает не просто читать материалы, а двигаться в проекте рядом с людьми, которые понимают путь.</p>
+        </div>
+
+        <div class="reviews-grid" aria-label="Отзывы участников клуба">
+          <article class="review-card">
+            <div class="review-card__top">
+              <span class="review-avatar">А</span>
+              <div>
+                <h3>Анна</h3>
+                <p>эксперт и консультант</p>
+              </div>
+            </div>
+            <p class="review-text">
+              «Стало понятнее, как собрать мои знания в проект, а не хвататься за разные инструменты хаотично. Особенно ценны разборы и спокойная поддержка.»
+            </p>
+          </article>
+
+          <article class="review-card review-card--accent">
+            <div class="review-card__top">
+              <span class="review-avatar">М</span>
+              <div>
+                <h3>Марина</h3>
+                <p>помогающий специалист</p>
+              </div>
+            </div>
+            <p class="review-text">
+              «Я пришла без технического опыта, но смогла разобраться, где мне может помогать AI и как это применить в своём деле без перегруза.»
+            </p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__top">
+              <span class="review-avatar">Е</span>
+              <div>
+                <h3>Елена</h3>
+                <p>творческий проект</p>
+              </div>
+            </div>
+            <p class="review-text">
+              «Мне важно было не просто получить список сервисов, а понять, куда двигаться. В клубе появилась структура и ощущение, что я не одна.»
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -255,10 +369,12 @@
 
         <div class="inside-note">
           <img
-            src="./block5/5 image bottom 1.png"
+            src="./block5/5 image bottom 1.webp"
             alt=""
             class="inside-note-bg"
             aria-hidden="true"
+            loading="lazy"
+            decoding="async"
           />
           <p>
             Мы не обещаем результат — мы создаём пространство<br />
@@ -279,8 +395,8 @@
           </p>
         </div>
 
-        <img src="./block6/6 icon 1.png" alt="" class="pricing-decor pricing-decor--left" aria-hidden="true" />
-        <img src="./block6/6 icon 2.png" alt="" class="pricing-decor pricing-decor--right" aria-hidden="true" />
+        <img src="./block6/6 icon 1.webp" alt="" class="pricing-decor pricing-decor--left" aria-hidden="true" loading="lazy" decoding="async" />
+        <img src="./block6/6 icon 2.webp" alt="" class="pricing-decor pricing-decor--right" aria-hidden="true" loading="lazy" decoding="async" />
 
         <!-- Pricing cards are independent: remove/add an article to change available packages. -->
         <div class="pricing-cards" aria-label="Тарифы клуба">
@@ -297,7 +413,7 @@
               <li>Сообщество, чат, поддержка и разборы</li>
               <li>AI-сервисы и инструменты для развития проекта</li>
             </ul>
-            <a class="pricing-button pricing-button--outline" href="#pricing">Вступить в клуб</a>
+            <a class="pricing-button pricing-button--outline" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить в клуб</a>
           </article>
 
           <article class="pricing-card pricing-card--featured">
@@ -313,7 +429,7 @@
               <li>Сообщество, чат, поддержка и разборы</li>
               <li>AI-сервисы и инструменты для развития проекта</li>
             </ul>
-            <a class="pricing-button" href="#pricing">Вступить в клуб</a>
+            <a class="pricing-button" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить в клуб</a>
           </article>
 
           <article class="pricing-card">
@@ -328,12 +444,12 @@
               <li>Сообщество, чат, поддержка и разборы</li>
               <li>AI-сервисы и инструменты для развития проекта</li>
             </ul>
-            <a class="pricing-button pricing-button--outline" href="#pricing">Вступить в клуб</a>
+            <a class="pricing-button pricing-button--outline" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить в клуб</a>
           </article>
         </div>
 
         <div class="pricing-guarantee">
-          <img src="./block6/6 image 1.png" alt="" class="pricing-guarantee-bg" aria-hidden="true" />
+          <img src="./block6/6 image 1.webp" alt="" class="pricing-guarantee-bg" aria-hidden="true" loading="lazy" decoding="async" />
           <p>
             14 дней гарантии возврата денег. Если доступ в закрытое пространство вам не подойдёт — вернём средства без вопросов.
           </p>
@@ -469,12 +585,133 @@
             <h3>Не нашли ответ на свой вопрос?</h3>
             <p>Напишите нам — мы на связи и поможем разобраться.</p>
           </div>
-          <a class="faq-support-button" href="#contacts">Задать вопрос</a>
+          <a
+            class="faq-support-button"
+            href="https://t.me/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a730"
+            target="_blank"
+            rel="noopener"
+          >Задать вопрос</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-section" id="contacts" aria-labelledby="final-title">
+      <div class="final-inner">
+        <div class="final-card">
+          <div class="final-copy">
+            <p class="section-label final-label">ГОТОВЫ НАЧАТЬ?</p>
+            <h2 id="final-title">
+              Ваш проект<br />
+              начинается здесь
+            </h2>
+            <p class="final-text">
+              Присоединяйтесь к клубу и начните строить своё дело<br />
+              в поддерживающем окружении уже сегодня.
+            </p>
+            <a class="final-button" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить в клуб <span aria-hidden="true">→</span></a>
+            <p class="final-note">от 25$ в месяц · доступ к среде, инструментам и поддержке</p>
+          </div>
+
+          <div class="final-visual">
+            <img src="./block8/8 image 1.webp" alt="Путь к личному проекту" loading="lazy" decoding="async" />
+          </div>
+
+          <div class="final-features" aria-label="Преимущества клуба">
+            <div class="final-feature">
+              <span class="final-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 3.8 18.2 6v5.3c0 4-2.5 7.3-6.2 8.9-3.7-1.6-6.2-4.9-6.2-8.9V6L12 3.8Z" />
+                  <path d="m8.8 12 2.1 2.1 4.6-4.8" />
+                </svg>
+              </span>
+              <div>
+                <h3>Поддержка</h3>
+                <p>Сообщество и помощь на каждом этапе</p>
+              </div>
+            </div>
+
+            <div class="final-feature">
+              <span class="final-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M5 7.5h14v8H8.5L5 18.5v-11Z" />
+                </svg>
+              </span>
+              <div>
+                <h3>Знания</h3>
+                <p>Практические материалы и разборы</p>
+              </div>
+            </div>
+
+            <div class="final-feature">
+              <span class="final-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 4.5v3" />
+                  <path d="M12 16.5v3" />
+                  <path d="M4.5 12h3" />
+                  <path d="M16.5 12h3" />
+                  <circle cx="12" cy="12" r="3.8" />
+                </svg>
+              </span>
+              <div>
+                <h3>Фокус</h3>
+                <p>Пошаговые действия и план</p>
+              </div>
+            </div>
+
+            <div class="final-feature">
+              <span class="final-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 20V9" />
+                  <path d="M12 9c-3.4 0-5.4-1.8-6-5 3.5 0 5.5 1.7 6 5Z" />
+                  <path d="M12 12c3.5 0 5.6-1.8 6.2-5-3.7 0-5.8 1.7-6.2 5Z" />
+                </svg>
+              </span>
+              <div>
+                <h3>Рост</h3>
+                <p>Развивайте проект и себя</p>
+              </div>
+            </div>
+          </div>
+
+          <footer class="final-footer">
+            <p>© <span data-current-year>2026</span> one-person-business.club. Все права защищены.</p>
+            <nav aria-label="Документы">
+              <a href="#contacts">Политика конфиденциальности</a>
+              <a href="#contacts">Пользовательское соглашение</a>
+            </nav>
+          </footer>
         </div>
       </div>
     </section>
 
     <script>
+      const joinBotBaseUrl = "https://tg.pulse.is/OnePersonBusinessBot";
+
+      function buildJoinBotUrl() {
+        const botUrl = new URL(joinBotBaseUrl);
+        const pageParams = new URLSearchParams(window.location.search);
+        const usernameValue =
+          pageParams.get("utm_source") ||
+          pageParams.get("utm_medium") ||
+          pageParams.get("source") ||
+          "direct";
+        const telegramIdValue =
+          pageParams.get("utm_campaign") ||
+          pageParams.get("utm_content") ||
+          pageParams.get("campaign") ||
+          "no_campaign";
+
+        botUrl.searchParams.set("start", "69e4a60adf3c92bbe207a72a");
+        botUrl.searchParams.set("username", usernameValue);
+        botUrl.searchParams.set("telegram_id", telegramIdValue);
+
+        return botUrl.toString();
+      }
+
+      document.querySelectorAll("[data-join-trigger]").forEach((trigger) => {
+        trigger.href = buildJoinBotUrl();
+      });
+
       document.querySelectorAll("[data-accordion]").forEach((accordion) => {
         accordion.addEventListener("click", (event) => {
           const button = event.target.closest(".faq-question");
@@ -490,6 +727,10 @@
             button.setAttribute("aria-expanded", "true");
           }
         });
+      });
+
+      document.querySelectorAll("[data-current-year]").forEach((item) => {
+        item.textContent = new Date().getFullYear();
       });
     </script>
   </body>
