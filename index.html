@@ -14,6 +14,9 @@
     <meta name="apple-mobile-web-app-title" content="One Person Business" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="canonical" href="https://one-person-business.club/" />
+    <link rel="alternate" hreflang="ru" href="https://one-person-business.club/" />
+    <link rel="alternate" hreflang="uk" href="https://ua.one-person-business.club/" />
+    <link rel="alternate" hreflang="x-default" href="https://one-person-business.club/" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
     <link rel="manifest" href="./site.webmanifest" />
@@ -65,9 +68,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=prod-5" />
+    <link rel="stylesheet" href="./styles.css?v=locale-1" />
   </head>
-  <body>
+  <body
+    data-locale="ru"
+    data-join-base="https://tg.pulse.is/OnePersonBusinessBot"
+    data-join-start="69e4a60adf3c92bbe207a72a"
+  >
     <section class="hero" aria-labelledby="hero-title">
       <header class="site-header" aria-label="Основная навигация">
         <a class="logo-link" href="/" aria-label="One Person Business">
@@ -82,6 +89,7 @@
           <a href="#contacts">Контакты</a>
         </nav>
 
+        <a class="language-link" href="https://ua.one-person-business.club/" hreflang="uk" lang="uk">UA</a>
         <a class="header-cta" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить <span aria-hidden="true">→</span></a>
       </header>
 
@@ -96,16 +104,17 @@
             зарабатывать
           </h1>
           <p class="hero-text">
-            Живое пространство, где вы изучаете, как выстраивать проект вокруг своей личности,
-            осваиваете современные AI-инструменты и двигаетесь в сторону своего дела в окружении
-            людей, которые идут туда же.
+            Живое пространство, где вас ведут за руку в самореализацию. А вы пошагово
+            выстраиваете генерацию дохода вокруг своей истинной сути и сильных сторон.
+            Осваиваете современные AI-инструменты и строите бизнес одного человека, где
+            технологии работают на вас.
           </p>
           <a class="primary-cta" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить в клуб <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="hero-visual">
           <img
-            src="./block1/1 block hero.webp"
+            src="./block1/1_block_hero_newedit.png"
             alt="Иллюстрация клуба One Person Business"
             class="hero-image"
             fetchpriority="high"
@@ -121,27 +130,27 @@
         <h2 id="audience-title">Это пространство для вас, если...</h2>
 
         <div class="audience-cards" aria-label="Для кого подходит клуб">
-          <img
-            src="./block2/2 block left img.webp"
-            alt="Помогающие специалисты"
-            class="audience-card audience-card-left"
-            loading="lazy"
-            decoding="async"
-          />
-          <img
-            src="./block2/2 block center img.webp"
-            alt="Эксперты и специалисты"
-            class="audience-card audience-card-center"
-            loading="lazy"
-            decoding="async"
-          />
-          <img
-            src="./block2/2 block right img.webp"
-            alt="Творческие личности"
-            class="audience-card audience-card-right"
-            loading="lazy"
-            decoding="async"
-          />
+          <article class="audience-card audience-card-left">
+            <img src="./block2/2 block left img.png" alt="" class="audience-card-image" loading="lazy" decoding="async" />
+            <div class="audience-card-copy">
+              <h3>Помогающие специалисты</h3>
+              <p>Хотите делать только свою работу, а всю рутину и технику чтобы взял на себя кто-то другой. В потоке без выгорания и хаоса.</p>
+            </div>
+          </article>
+          <article class="audience-card audience-card-center">
+            <img src="./block2/2 block center img.png" alt="" class="audience-card-image" loading="lazy" decoding="async" />
+            <div class="audience-card-copy">
+              <h3>Эксперты и специалисты</h3>
+              <p>Хотите упаковать свой опыт, знания и сильные стороны в понятный проект.</p>
+            </div>
+          </article>
+          <article class="audience-card audience-card-right">
+            <img src="./block2/2 block right img.png" alt="" class="audience-card-image" loading="lazy" decoding="async" />
+            <div class="audience-card-copy">
+              <h3>Творческие личности</h3>
+              <p>Хотите превратить своё творчество в стабильный доход и найти свою аудиторию.</p>
+            </div>
+          </article>
         </div>
 
         <div class="audience-note" aria-label="Главная идея клуба">
@@ -274,6 +283,63 @@
       </div>
     </section>
 
+    <section class="authors-section" id="authors" aria-labelledby="authors-title">
+      <div class="authors-inner">
+        <div class="authors-heading">
+          <p class="section-label authors-label">КТО ВЕДЁТ</p>
+          <h2 id="authors-title">Два эксперта — два направления</h2>
+        </div>
+
+        <div class="authors-grid" aria-label="Эксперты клуба">
+          <article class="author-card author-card--nata">
+            <img
+              src="./block 4.5 authors/nata_german.png"
+              alt="Ната Герман"
+              class="author-photo"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="author-copy">
+              <h3>Ната Герман</h3>
+              <p class="author-badge">ЛИЧНОСТЬ · МЫШЛЕНИЕ · СТРАТЕГИЯ</p>
+              <p class="author-text">
+                Помогаю экспертам и специалистам выстраивать проект вокруг своей личности,
+                находить свою нишу и уверенно двигаться к доходу.
+              </p>
+              <ul class="author-list">
+                <li>10+ лет в развитии экспертов</li>
+                <li>Стратегия и позиционирование</li>
+                <li>Создание сильного личного бренда</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="author-card author-card--vadim">
+            <img
+              src="./block 4.5 authors/vadim_drigin.png"
+              alt="Вадим Дригин"
+              class="author-photo"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="author-copy">
+              <h3>Вадим Дригин</h3>
+              <p class="author-badge">AI · ТЕХНОЛОГИИ · АВТОМАТИЗАЦИЯ</p>
+              <p class="author-text">
+                Показываю, как использовать современные AI-инструменты для автоматизации,
+                создания контента и масштабирования.
+              </p>
+              <ul class="author-list">
+                <li>AI-эксперт и разработчик</li>
+                <li>Автоматизация процессов</li>
+                <li>Интеграция AI в проекты</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
       <div class="reviews-inner">
         <div class="reviews-heading">
@@ -282,45 +348,31 @@
           <p>Клуб помогает не просто читать материалы, а двигаться в проекте рядом с людьми, которые понимают путь.</p>
         </div>
 
-        <div class="reviews-grid" aria-label="Отзывы участников клуба">
-          <article class="review-card">
-            <div class="review-card__top">
-              <span class="review-avatar">А</span>
-              <div>
-                <h3>Анна</h3>
-                <p>эксперт и консультант</p>
-              </div>
-            </div>
-            <p class="review-text">
-              «Стало понятнее, как собрать мои знания в проект, а не хвататься за разные инструменты хаотично. Особенно ценны разборы и спокойная поддержка.»
-            </p>
-          </article>
+        <div class="reviews-carousel" data-review-carousel aria-label="Отзывы участников клуба">
+          <button class="reviews-arrow reviews-arrow--prev" type="button" data-review-prev aria-label="Предыдущий отзыв">←</button>
+          <div class="reviews-track">
+          <button class="review-shot" type="button" data-review-thumb data-review-slide>
+            <img src="./block 4.6 feeadback/feedback 1.png" alt="Отзыв участницы клуба" loading="lazy" decoding="async" />
+          </button>
+          <button class="review-shot" type="button" data-review-thumb data-review-slide>
+            <img src="./block 4.6 feeadback/feedback 2.png" alt="Отзыв участницы клуба" loading="lazy" decoding="async" />
+          </button>
+          <button class="review-shot" type="button" data-review-thumb data-review-slide>
+            <img src="./block 4.6 feeadback/feedback 3.png" alt="Отзыв участницы клуба" loading="lazy" decoding="async" />
+          </button>
+          <button class="review-shot" type="button" data-review-thumb data-review-slide>
+            <img src="./block 4.6 feeadback/feedback 4.png" alt="Отзыв участницы клуба" loading="lazy" decoding="async" />
+          </button>
+          </div>
+          <button class="reviews-arrow reviews-arrow--next" type="button" data-review-next aria-label="Следующий отзыв">→</button>
+        </div>
 
-          <article class="review-card review-card--accent">
-            <div class="review-card__top">
-              <span class="review-avatar">М</span>
-              <div>
-                <h3>Марина</h3>
-                <p>помогающий специалист</p>
-              </div>
-            </div>
-            <p class="review-text">
-              «Я пришла без технического опыта, но смогла разобраться, где мне может помогать AI и как это применить в своём деле без перегруза.»
-            </p>
-          </article>
-
-          <article class="review-card">
-            <div class="review-card__top">
-              <span class="review-avatar">Е</span>
-              <div>
-                <h3>Елена</h3>
-                <p>творческий проект</p>
-              </div>
-            </div>
-            <p class="review-text">
-              «Мне важно было не просто получить список сервисов, а понять, куда двигаться. В клубе появилась структура и ощущение, что я не одна.»
-            </p>
-          </article>
+        <div class="review-modal" data-review-modal hidden>
+          <button class="review-modal__backdrop" type="button" data-review-close aria-label="Закрыть отзыв"></button>
+          <div class="review-modal__dialog" role="dialog" aria-modal="true" aria-label="Отзыв участницы клуба">
+            <button class="review-modal__close" type="button" data-review-close aria-label="Закрыть">×</button>
+            <img src="" alt="" data-review-modal-image />
+          </div>
         </div>
       </div>
     </section>
@@ -395,8 +447,8 @@
           </p>
         </div>
 
-        <img src="./block6/6 icon 1.webp" alt="" class="pricing-decor pricing-decor--left" aria-hidden="true" loading="lazy" decoding="async" />
-        <img src="./block6/6 icon 2.webp" alt="" class="pricing-decor pricing-decor--right" aria-hidden="true" loading="lazy" decoding="async" />
+        <img src="./block6/6 icon 1.png" alt="" class="pricing-decor pricing-decor--left" aria-hidden="true" loading="lazy" decoding="async" />
+        <img src="./block6/6 icon 2.png" alt="" class="pricing-decor pricing-decor--right" aria-hidden="true" loading="lazy" decoding="async" />
 
         <!-- Pricing cards are independent: remove/add an article to change available packages. -->
         <div class="pricing-cards" aria-label="Тарифы клуба">
@@ -404,10 +456,10 @@
             <div class="pricing-card-badge">Первые 100 участников</div>
             <h3>Старт</h3>
             <div class="pricing-price">
-              <strong>25$</strong>
+              <strong>1100&nbsp;грн</strong>
               <span>/месяц</span>
             </div>
-            <p class="pricing-subnote">Цена закреплена при активной подписке.</p>
+            <p class="pricing-subnote"><span>Эквивалент 25$.</span><span>Цена закрепляется при активной подписке.</span></p>
             <ul>
               <li>Материалы клуба и еженедельные обновления</li>
               <li>Сообщество, чат, поддержка и разборы</li>
@@ -420,10 +472,10 @@
             <div class="pricing-card-badge">Самый выгодный</div>
             <h3>3 Месяца</h3>
             <div class="pricing-price">
-              <strong>60$</strong>
+              <strong>2700&nbsp;грн</strong>
               <span>/3 месяца</span>
             </div>
-            <p class="pricing-saving">экономия 30$</p>
+            <p class="pricing-saving"><span>Эквивалент 60$.</span><span>Экономия 600 грн.</span></p>
             <ul>
               <li>Материалы клуба и еженедельные обновления</li>
               <li>Сообщество, чат, поддержка и разборы</li>
@@ -435,10 +487,10 @@
           <article class="pricing-card">
             <h3>Стандарт</h3>
             <div class="pricing-price">
-              <strong>30$</strong>
+              <strong>1300&nbsp;грн</strong>
               <span>/месяц</span>
             </div>
-            <p class="pricing-subnote">После первых 100 участников</p>
+            <p class="pricing-subnote"><span>Эквивалент 30$.</span><span>После первых 100 участников.</span></p>
             <ul>
               <li>Материалы клуба и еженедельные обновления</li>
               <li>Сообщество, чат, поддержка и разборы</li>
@@ -449,7 +501,7 @@
         </div>
 
         <div class="pricing-guarantee">
-          <img src="./block6/6 image 1.webp" alt="" class="pricing-guarantee-bg" aria-hidden="true" loading="lazy" decoding="async" />
+          <img src="./block6/6 image 1.png" alt="" class="pricing-guarantee-bg" aria-hidden="true" loading="lazy" decoding="async" />
           <p>
             14 дней гарантии возврата денег. Если доступ в закрытое пространство вам не подойдёт — вернём средства без вопросов.
           </p>
@@ -609,7 +661,7 @@
               в поддерживающем окружении уже сегодня.
             </p>
             <a class="final-button" href="https://tg.pulse.is/OnePersonBusinessBot?start=69e4a60adf3c92bbe207a72a" target="_blank" rel="noopener" data-join-trigger>Вступить в клуб <span aria-hidden="true">→</span></a>
-            <p class="final-note">от 25$ в месяц · доступ к среде, инструментам и поддержке</p>
+            <p class="final-note">от 1100 грн в месяц · эквивалент 25$ · доступ к среде, инструментам и поддержке</p>
           </div>
 
           <div class="final-visual">
@@ -676,8 +728,8 @@
           <footer class="final-footer">
             <p>© <span data-current-year>2026</span> one-person-business.club. Все права защищены.</p>
             <nav aria-label="Документы">
-              <a href="#contacts">Политика конфиденциальности</a>
-              <a href="#contacts">Пользовательское соглашение</a>
+              <a href="./privacy.html">Политика конфиденциальности</a>
+              <a href="./offer.html">Публичная оферта</a>
             </nav>
           </footer>
         </div>
@@ -685,7 +737,8 @@
     </section>
 
     <script>
-      const joinBotBaseUrl = "https://tg.pulse.is/OnePersonBusinessBot";
+      const joinBotBaseUrl = document.body.dataset.joinBase || "https://tg.pulse.is/OnePersonBusinessBot";
+      const joinStart = document.body.dataset.joinStart || "69e4a60adf3c92bbe207a72a";
 
       function buildJoinBotUrl() {
         const botUrl = new URL(joinBotBaseUrl);
@@ -701,7 +754,7 @@
           pageParams.get("campaign") ||
           "no_campaign";
 
-        botUrl.searchParams.set("start", "69e4a60adf3c92bbe207a72a");
+        botUrl.searchParams.set("start", joinStart);
         botUrl.searchParams.set("username", usernameValue);
         botUrl.searchParams.set("telegram_id", telegramIdValue);
 
@@ -733,6 +786,93 @@
         item.textContent = new Date().getFullYear();
       });
 
+      document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
+        const slides = Array.from(carousel.querySelectorAll("[data-review-slide]"));
+        const prevButton = carousel.querySelector("[data-review-prev]");
+        const nextButton = carousel.querySelector("[data-review-next]");
+        const modal = document.querySelector("[data-review-modal]");
+        const modalImage = modal?.querySelector("[data-review-modal-image]");
+        let activeIndex = 0;
+        let autoplayId = null;
+
+        function getRelativeIndex(index) {
+          return (index - activeIndex + slides.length) % slides.length;
+        }
+
+        function renderCarousel() {
+          slides.forEach((slide, index) => {
+            const position = getRelativeIndex(index);
+            slide.classList.toggle("is-active", position === 0);
+            slide.classList.toggle("is-next", position === 1);
+            slide.classList.toggle("is-prev", position === slides.length - 1);
+            slide.classList.toggle("is-far", position > 1 && position < slides.length - 1);
+            slide.setAttribute("aria-hidden", position > 1 && position < slides.length - 1 ? "true" : "false");
+          });
+        }
+
+        function goToSlide(index) {
+          activeIndex = (index + slides.length) % slides.length;
+          renderCarousel();
+        }
+
+        function startAutoplay() {
+          if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+          stopAutoplay();
+          autoplayId = window.setInterval(() => goToSlide(activeIndex + 1), 4200);
+        }
+
+        function stopAutoplay() {
+          if (autoplayId) window.clearInterval(autoplayId);
+          autoplayId = null;
+        }
+
+        function openReviewModal(image) {
+          if (!modal || !modalImage) return;
+          modalImage.src = image.currentSrc || image.src;
+          modalImage.alt = image.alt;
+          modal.hidden = false;
+          document.body.classList.add("is-review-modal-open");
+        }
+
+        slides.forEach((slide, index) => {
+          slide.addEventListener("click", () => {
+            if (index !== activeIndex) {
+              goToSlide(index);
+              return;
+            }
+            const image = slide.querySelector("img");
+            if (image) openReviewModal(image);
+          });
+        });
+
+        prevButton?.addEventListener("click", () => goToSlide(activeIndex - 1));
+        nextButton?.addEventListener("click", () => goToSlide(activeIndex + 1));
+        carousel.addEventListener("mouseenter", stopAutoplay);
+        carousel.addEventListener("mouseleave", startAutoplay);
+        carousel.addEventListener("focusin", stopAutoplay);
+        carousel.addEventListener("focusout", startAutoplay);
+
+        renderCarousel();
+        startAutoplay();
+      });
+
+      document.querySelectorAll("[data-review-close]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const modal = button.closest("[data-review-modal]");
+          if (!modal) return;
+          modal.hidden = true;
+          document.body.classList.remove("is-review-modal-open");
+        });
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key !== "Escape") return;
+        document.querySelectorAll("[data-review-modal]:not([hidden])").forEach((modal) => {
+          modal.hidden = true;
+          document.body.classList.remove("is-review-modal-open");
+        });
+      });
+
       const revealItems = document.querySelectorAll(
         [
           ".audience-inner",
@@ -742,8 +882,10 @@
           ".work-heading",
           ".work-card",
           ".work-note",
+          ".authors-heading",
+          ".author-card",
           ".reviews-heading",
-          ".review-card",
+          ".reviews-carousel",
           ".inside-heading",
           ".inside-panel",
           ".inside-note",

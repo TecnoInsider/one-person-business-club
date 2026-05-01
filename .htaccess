@@ -2,3 +2,6 @@ RewriteEngine On
 
 RewriteCond %{HTTP_HOST} ^www\.one-person-business\.club$ [NC]
 RewriteRule ^(.*)$ https://one-person-business.club/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^ua\.one-person-business\.club$ [NC]
+RewriteRule ^$ /ua/index.html [L]
